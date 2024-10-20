@@ -1,0 +1,181 @@
+/* Estilos para el contenedor principal */
+.screen2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #0a472a; /* Fondo oscuro */
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Pseudoelemento para el fondo con la imagen del escudo */
+  .screen2-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/escudo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    opacity: 0.15;
+    z-index: -1;
+  }
+  
+  /* Estilo para el título principal */
+  .screen2-title {
+    background-color: rgba(138, 154, 128, 0.85); /* Fondo verde claro */
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px; /* Reducir espaciado inferior */
+    width: 90%; /* Aumentar un poco el ancho del título */
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  /* Estilos para la lista de simulacros */
+  .simulacros-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Reduce el espacio entre los ítems */
+    width: 100%;
+    max-width: 900px;
+    z-index: 2;
+  }
+  
+  /* Estilo para cada ítem de simulacro (más pequeño que el título) */
+  .simulacro-item {
+    background-color: rgba(118, 138, 108, 0.85); /* Color ligeramente más oscuro que el título */
+    padding: 10px; /* Reduce el padding de los ítems */
+    border-radius: 8px; /* Bordes redondeados más pequeños */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Añade transición para animaciones */
+  }
+  
+  /* Animación al pasar el mouse */
+  .simulacro-item:hover {
+    transform: translateY(-5px); /* Movimiento hacia arriba */
+    background-color: rgba(98, 118, 88, 0.85); /* Cambio a un color más oscuro */
+  }
+  
+  .simulacro-item h3 {
+    color: #000;
+    font-size: 1.4em; /* Tamaño de fuente más pequeño que el título */
+    margin-bottom: 5px; /* Reducir margen inferior */
+  }
+  
+  .simulacro-item a {
+    color: #0056b3;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  
+  .simulacro-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para el botón de regresar */
+  .back-button {
+    background-color: #f87171;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  .back-button:hover {
+    background-color: #dc2626;
+    transform: translateY(-3px);
+  }
+  
+  /* RESPONSIVIDAD */
+  
+  /* Para pantallas medianas (tablets) */
+  @media (max-width: 1024px) {
+    .simulacros-list {
+      max-width: 600px;
+    }
+  
+    .simulacro-item h3 {
+      font-size: 1.2em;
+    }
+  
+    .simulacro-item a {
+      font-size: 1em;
+    }
+  
+    .back-button {
+      font-size: 1.1em;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Para pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+    .screen2-container::before {
+      background-size: cover;
+      opacity: 0.1;
+    }
+  
+    .simulacros-list {
+      max-width: 450px;
+    }
+  
+    .simulacro-item h3 {
+      font-size: 1.1em;
+    }
+  
+    .simulacro-item a {
+      font-size: 0.9em;
+    }
+  
+    .back-button {
+      width: 100%;
+      max-width: 320px;
+      padding: 10px;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (teléfonos pequeños) */
+  @media (max-width: 480px) {
+    .screen2-container::before {
+      opacity: 0.08;
+    }
+  
+    .simulacros-list {
+      max-width: 360px;
+    }
+  
+    .simulacro-item h3 {
+      font-size: 1em;
+    }
+  
+    .simulacro-item a {
+      font-size: 0.8em;
+    }
+  
+    .back-button {
+      font-size: 1em;
+      padding: 8px;
+    }
+  }
+  
