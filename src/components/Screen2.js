@@ -10,7 +10,7 @@ function Screen2({ setCurrentScreen }) {
         <div className="simulacro-item">
           <h3>Conocimiento</h3>
           <a 
-            href="https://www.ejemplo.com/simulacro1" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfyN_hX_L_urUIlFPOJ5bOVl06WElf7E8zysMz0Qb9S-hH6GQ/viewform?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -21,7 +21,7 @@ function Screen2({ setCurrentScreen }) {
         <div className="simulacro-item">
           <h3>Entrevista</h3>
           <a 
-            href="https://www.ejemplo.com/simulacro2" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdHD6KtTFlYcdZLVqbpN7LFAsbucscdAizlArUDnohzVZsshA/viewform?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ function Screen2({ setCurrentScreen }) {
         <div className="simulacro-item">
           <h3>Psicométrico</h3>
           <a 
-            href="https://www.ejemplo.com/simulacro3" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf2FPtcS015__Yd3nxgb0F06BIQiYPJpoOeKrREkrNfdANIGQ/viewform?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
           >
